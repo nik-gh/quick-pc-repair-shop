@@ -1,0 +1,17 @@
+- var HOMEPAGE = false;
+block variables
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/bootstrap.min.js')
+  body
+    include ./includes/navbar.pug
+    if HOMEPAGE
+      include ./includes/showcase.pug
+    .container
+      block content
+      include ./includes/footer.pug
+    // /container
